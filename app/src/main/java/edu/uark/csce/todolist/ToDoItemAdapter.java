@@ -28,7 +28,7 @@ public class ToDoItemAdapter extends ArrayAdapter<ToDoItem> {
 		
 		String taskString = item.getTask();
 		Date createdDate = item.getCreatedDate();
-		SimpleDateFormat sdf = new SimpleDateFormat("h:mm a 'on' yyyy/MM/dd");
+		SimpleDateFormat sdf = new SimpleDateFormat("h:mm:ss a 'on' MM/dd/yyyy");
 		String dateString = sdf.format(createdDate);
 		
 		if (convertView == null) {

@@ -31,7 +31,7 @@ public class ToDoItem {
 	
 	@Override
 	public String toString() {
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd");
+		SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
 		String dateString = sdf.format(createdDate);
 		return "(" + dateString + ")" + task;
 	}
